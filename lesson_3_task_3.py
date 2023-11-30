@@ -11,5 +11,5 @@ Mailing1 = Mailing(to_address, from_address, 500, '098755689455')
 Mailing1.whatMailing()
 
 def tracking():
-    print("Отправление ", Mailing1.track, "из ", from_address, "в ", to_address, ". Стоимость ", Mailing1.cost, " рублей.")
+    print("Отправление ", Mailing1.track, "из ", from_address.index, from_address.city, from_address.street, from_address.house, "-", from_address.appt, "в ", to_address.index, to_address.city, to_address.street, to_address.house, "-", to_address.appt, ". Стоимость ", Mailing1.cost, " рублей.")
 tracking()
